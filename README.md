@@ -4,7 +4,11 @@ Go Study Materials
 
 ## Installation
 
-\[Omitted\]
+**Ubuntu**
+
+```
+$ sudo apt install golang-go
+```
 
 ## Docker
 
@@ -13,8 +17,7 @@ $ docker pull golang[:latest]
 ```
 
 ```
-$ docker run -it \
-    -v `pwd`/src:/src \
-    golang:latest \
-    bash
+$ docker run -t -d \
+    -v `pwd`:/go-study \
+    golang:latest
 ```
